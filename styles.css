@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    width: 100vw;
+    height: 100dvh;
+    background-color: #171717;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1.25rem 3rem;
+    z-index: 100;
+    font-size: 1.35rem;
+    background-color: rgb(255, 0, 0);
+}
+
+header h1 {
+    color: rgb(255, 255, 0);
+    font-family: "Sedgwick Ave", cursive;
+}
+
+main {
+    padding: 0 0;
+    overflow-y: auto;
+    margin-top: 26dvh;
+    font-family: "Oswald", sans-serif;
+}
+
+main .homepage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px
+}
+
+main .homepage img {
+    height: 65vh;
+    border-radius: 50%;
+}
+
+main .homepage .boxinfo {
+    max-width: 40vw;
+}
+
+main .homepage .boxinfo h1 {
+    font-size: 4vw
+}
+
+.boxinfo .buttons {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    gap: 0.35vw;
+}
+
+.boxinfo .buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.75vw;
+    border-radius: 0.6vw;
+}
+
+#insta {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgb(246, 77, 190);
+    margin-left: 1.75rem;
+}
+
+.buttons #contato {
+    height: 3.5rem;
+    width: 7.4rem;
+    background-color: rgb(255, 62, 62);
+}
+
+.buttons #twitter {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgb(4, 4, 40);
+}
+
+.aboutme {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 8vw;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+}
+
+.aboutme .text {
+    max-width: 40vw;
+}
+
+.aboutme .text h1 {
+    font-size: 5vw;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.box h1 {
+    font-family: "Shadows Into Light", cursive;
+}
+
+.box .img {
+    position: absolute;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box .img div {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    transform: rotate(calc(360deg/7 * var(--i)));
+    transform-origin: 210px;
+}
+
+.box .img div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: rotate(calc(-360deg/7 * var(--i)));
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+}
+
+.projects h1 {
+    font-size: 3.75vw;
+}
+
+.p1 {
+    margin-top: 12vh;
+    display: flex;
+    gap: 3vw;
+}
+
+.p1 .text {
+    max-width: 40vw;
+    ;
+}
+
+#hollow_voices {
+    width: 43vw;
+    border-radius: 2vw;
+}
+
+#hvserver {
+    height: 6vh;
+    width: 7.35vw;
+    background-color: rgb(94, 102, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    line-height: 0px;
+    gap: 0.35vw;
+    font-size: 1.15vw;
+    border-radius: 0.6vw;
+    margin-top: 0.85vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        padding: 0.5rem 1.25rem
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        margin-top: 16dvh;
+    }
+
+    main .homepage {
+        flex-direction: column;
+    }
+
+    main .homepage img {
+        height: 40dvh;
+    }
+
+    main .homepage .boxinfo {
+        max-width: 80vw;
+    }
+
+    main .homepage .boxinfo h1 {
+        font-size: 1.3rem;
+    }
+
+    main .homepage .boxinfo p {
+        font-size: 0.8rem;
+    }
+
+    .boxinfo .buttons a {
+        font-size: 1.8rem;
+    }
+
+    .buttons #contato {
+        width: 6rem;
+        height: 3.5rem;
+    }
+
+    #insta {
+        margin-left: 1.45rem;
+    }
+
+    .aboutme {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .aboutme .text {
+        max-width: 80vw;
+    }
+
+    .aboutme .text h1 {
+        font-size: 5vw;
+    }
+
+    .box {
+        width: 240px;
+        height: 240px;
+    }
+
+    .box h1 {
+        font-family: "Shadows Into Light", cursive;
+    }
+
+    .box .img div {
+        width: 70px;
+        height: 70px;
+        transform-origin: 160px;
+    }
+
+    .p1 {
+    flex-direction: column;
+    margin-top: 5vh;;
+    }
+
+    .p1 .text {
+        max-width: 80vw;
+    }
+
+    #hollow_voices {
+        width: 80vw;
+    }
+
+    #hvserver {
+        width: 5rem;
+        font-size: 0.7rem;
+    }
+}

@@ -286,11 +286,15 @@ main .homepage .boxinfo h1 {
 
     .p1 {
     flex-direction: column;
-    margin-top: 5vh;;
+    margin-top: 5vh;
     }
 
     .p1 .text {
         max-width: 80vw;
+    }
+
+    .p1 .text h1 {
+        font-size: 5vw;
     }
 
     #hollow_voices {

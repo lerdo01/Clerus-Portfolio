@@ -284,6 +284,10 @@ main .homepage .boxinfo h1 {
         transform-origin: 160px;
     }
 
+    .projects h1:first-of-type {
+        font-size: 9vw;
+    }
+
     .p1 {
     flex-direction: column;
     margin-top: 5vh;
